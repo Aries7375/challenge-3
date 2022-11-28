@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+:root {
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: var(--Cream);
+}
+main {
+  min-width: 343px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-cont {
+  width: 343px;
+  height: 612px;
+  border-radius: 10px;
+  background: var(--White);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+.img-cont {
+  height: 240px;
+  background-image: url("./images/image-product-mobile.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 10px 10px 0 0;
+}
+.data {
+  padding: 25px;
+}
+h1 {
+  font-family: "Fraunces", serif;
+  margin-bottom: 15px;
+}
+.perfume {
+  letter-spacing: 4px;
+  color: darkgray;
+  margin-bottom: 7px;
+}
+p {
+  color: darkgrey;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+.data-text {
+  line-height: 1.5;
+}
+span {
+  text-decoration: line-through;
+}
+h2 {
+  font-size: 30px;
+  color: var(--Dark-cyan);
+  font-family: "Fraunces", serif;
+}
+.price {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 20px 0 20px 0;
+}
+button {
+  cursor: pointer;
+  background: var(--Dark-cyan);
+  color: var(--White);
+  padding: 14px 0;
+  min-width: 100%;
+  border: none;
+  border-radius: 7px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+}
+button:active {
+  background: hsl(158, 36%, 27%);
+}
+i {
+  margin-right: 6px;
+}
+@media (min-width: 950px) {
+  .main-cont {
+    width: 600px;
+    height: 450px;
+    display: flex;
+  }
+  .img-cont {
+    background-image: url("./images/image-product-desktop.jpg");
+    width: 300px;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+  }
+  .data {
+    height: 450px;
+    width: 300px;
+  }
+  .perfume {
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  p {
+    font-size: 15px;
+  }
+}
